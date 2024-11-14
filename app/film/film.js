@@ -11,9 +11,9 @@ const DATA = [
     logo: "https://upload.wikimedia.org/wikipedia/en/3/32/A_Silent_Voice_Film_Poster.jpg",
   },
   {
-    desc: "Seorang siswa SMA menemukan buku harian teman sekelasnya yang menderita penyakit pankreas",
-    name: "I Want To Eat Your Pancreas",
-    logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThh7WVrJ3PiGF3KHG0686L64HLmjYKqdHWoQ&s",
+    desc: "Sorang siswi SMA, berhasrat menjalani kehidupan layaknya siswa di kota Tokyo—sebuah impian yang sangat kontras dengan kehidupannya di pedesaan.",
+    name: "Your Name",
+    logo: "https://static.wikia.nocookie.net/kiminonawa/images/6/62/Kimi-no-Na-wa.-Visual.jpg",
   },
   {
     desc: "Kota Tokyo, Jepang yang terkena invasi gelembung dan menyebabkan kerusakan gravitasi bumi.",

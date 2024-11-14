@@ -3,6 +3,38 @@ import { FlatList, Image, StyleSheet, Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import FilmCover from "../../components/FilmCover.js";
 
+const CATEGORIES = [
+  {
+    id: "1",
+    name: "Action",
+  },
+  {
+    id: "2",
+    name: "Animation",
+  },
+  {
+    id: "3",
+    name: "Sci-fi",
+  },
+  {
+    id: "4",
+    name: "Horror",
+  },
+  {
+    id: "5",
+    name: "Comedy",
+  },
+  {
+    id: "6",
+    name: "Mystery",
+  },
+  {
+    id: "6",
+    name: "Adventure",
+  },
+];
+
+
 const DATA = [
   {
     desc: "Directed: Naoko Yamada",
@@ -10,9 +42,9 @@ const DATA = [
     logo: "https://upload.wikimedia.org/wikipedia/en/3/32/A_Silent_Voice_Film_Poster.jpg",
   },
   {
-    desc: "Directed: Shinichiro Ushijima",
-    name: "I Want To Eat Your Pancreas",
-    logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThh7WVrJ3PiGF3KHG0686L64HLmjYKqdHWoQ&s",
+    desc: "Directed: Makoto Shinkai",
+    name: "Your Name",
+    logo: "https://static.wikia.nocookie.net/kiminonawa/images/6/62/Kimi-no-Na-wa.-Visual.jpg",
   },
   {
     desc: "Directed: Tetsurō Araki",
@@ -23,21 +55,25 @@ const DATA = [
 
 export default function HomeScreen() {
   return (
-    <SafeAreaView
-      style={{
-        backgroundColor: "white",
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <FlatList
-        data={DATA}
-        renderItem={({ item }) => <FilmCover item={item} />}
-        keyExtractor={(item) => item.desc}
-      />
-    </SafeAreaView>
-  );
+    <SafeAreaView className="p-4">
+    <FlatList
+      data={CATEGORIES}
+      horizontal
+      renderItem={({ item }) => (
+        <Text className="m-2 border p-2 rounded-xl">{item.name}</Text>
+      )}
+      className="space-x-4"
+      showsHorizontalScrollIndicator={false}
+      keyExtractor={(item) => item.id}
+    />
+    <FlatList
+      
+      data={DATA}
+      numColumns={2}
+      renderItem={({ item }) => <FilmCover item={item} />}
+      keyExtractor={(item) => item.desc}
+    />
+  </SafeAreaView>  );
 }
 
 const styles = StyleSheet.create({

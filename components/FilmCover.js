@@ -10,9 +10,9 @@ const FilmCover = ({ item }) => {
         params: { film: item.name },
       }}
     >
-      <View className="p-4 m-2 dark:bg-slate-800 rounded-md md:flex mx-auto md:w-auto">
+      <View className="p-4 m-2 dark:bg-slate-800 md:w-20 rounded-xl">
         <Image
-        className="rounded-md mx-auto"
+        className="rounded-xl mx-auto"
           source={{
             uri: item.logo,
             height: 210,
