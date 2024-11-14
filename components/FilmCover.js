@@ -10,26 +10,24 @@ const FilmCover = ({ item }) => {
         params: { film: item.name },
       }}
     >
-      <View>
+      <View className="p-4 m-2 dark:bg-slate-800 rounded-md md:flex mx-auto md:w-auto">
         <Image
+        className="rounded-md mx-auto"
           source={{
             uri: item.logo,
             height: 210,
             width: 150,
-            justifyContent: "center",
-            alignItems: "center"
           }}
         />
-        <Text style={{ 
-          fontWeight: "bold",
-          textAlign: "center"
-           }}>
-          
+        <Text 
+        className="text-center font-bold text-white p-1 m-1">
           {item.name}
           <br></br>
-          {item.desc}
         </Text>
-        
+        <Text
+        className="text-center text-white">
+        {item.desc}
+        </Text>
       </View>
     </Link>
   );

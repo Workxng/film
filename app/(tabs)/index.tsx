@@ -5,17 +5,17 @@ import FilmCover from "../../components/FilmCover.js";
 
 const DATA = [
   {
-    desc: "seorang anak laki-laki yang berusaha menebus kesalahan yang ia lakukan kepada seorang gadis tuna rungu",
+    desc: "Directed: Naoko Yamada",
     name: "A Silent Voice",
     logo: "https://upload.wikimedia.org/wikipedia/en/3/32/A_Silent_Voice_Film_Poster.jpg",
   },
   {
-    desc: "seorang siswa SMA menemukan buku harian teman sekelasnya yang menderita penyakit pankreas",
+    desc: "Directed: Shinichiro Ushijima",
     name: "I Want To Eat Your Pancreas",
-    logo: "https://play-lh.googleusercontent.com/SUDOxGhYBT1YRnuxaFkT_XS1fxwgOJvXG0bLNcVKC-HIeiSA8A8odYUUlMqn5t_dutquYIyuvR0Q_XtUkcAA=w240-h480-rw",
+    logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThh7WVrJ3PiGF3KHG0686L64HLmjYKqdHWoQ&s",
   },
   {
-    desc: "Kota Tokyo, Jepang yang terkena invasi gelembung dan menyebabkan kerusakan gravitasi bumi.",
+    desc: "Directed: Tetsurō Araki",
     name: "Bubble",
     logo: "https://m.media-amazon.com/images/M/MV5BNjMzNmFjZWItMjZlZS00OTgwLTgwMmMtYTc5MTA0MTY2MGEwXkEyXkFqcGc@._V1_.jpg",
   },
